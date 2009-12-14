@@ -11,19 +11,19 @@ module UniDB.Properties where
 
 {-| <http://www.unicode.org/reports/tr11/#Definitions>
  -}
-data EastAsianWidth          =  Fullwidth
+data East_Asian_Width        =  Fullwidth
                              |  Halfwidth
                              |  Wide
                              |  Narrow
                              |  Ambiguous
                              |  Neutral
-deriving instance Eq EastAsianWidth
-deriving instance Show EastAsianWidth
+deriving instance Eq East_Asian_Width
+deriving instance Show East_Asian_Width
 
 
 {-| <http://www.unicode.org/reports/tr44/#General_Category_Values> 
  -}
-data GeneralCategory
+data General_Category
   -- | An uppercase letter.
   = Uppercase_Letter
   -- | A lowercase letter.
@@ -84,13 +84,13 @@ data GeneralCategory
   | Private_Use
   -- | A reserved unassigned code point or a noncharacter.
   | Unassigned
-deriving instance Eq GeneralCategory
-deriving instance Show GeneralCategory
+deriving instance Eq General_Category
+deriving instance Show General_Category
 
 
 {-| <http://www.unicode.org/reports/tr9/#Bidirectional_Character_Types>
  -}
-data BidiClass
+data Bidi_Class
   -- | Any strong left-to-right character.
   = Left_To_Right
   -- | @U+202A@: the LR embedding control.
@@ -129,7 +129,7 @@ data BidiClass
   | White_Space
   -- | Most other symbols and punctuation marks.
   | Other_Neutral
-deriving instance Eq BidiClass
-deriving instance Show BidiClass
+deriving instance Eq Bidi_Class
+deriving instance Show Bidi_Class
 
 
